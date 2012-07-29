@@ -228,7 +228,7 @@ class ManagementUtility(object):
                 "Available subcommands:",
             ]
             commands_dict = collections.defaultdict(lambda: [])
-            for name, app in get_commands().iteritems():
+            for name, app in get_commands().items():
                 if app == 'django.core':
                     app = 'django'
                 else:
